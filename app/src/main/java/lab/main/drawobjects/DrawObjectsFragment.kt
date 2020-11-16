@@ -14,8 +14,11 @@ class DrawObjectsFragment :
 
 		val imageView = view.findViewById<ImageView>(R.id.drawObjectsImageView)
 		val drawButton = view.findViewById<Button>(R.id.drawObjectsDrawButton)
+
+		val objectDrafter = ObjectDrafter(200, 500, imageView)
+
 		drawButton.setOnClickListener {
-			print("click")
+			objectDrafter.draw()
 		}
 	}
 }
