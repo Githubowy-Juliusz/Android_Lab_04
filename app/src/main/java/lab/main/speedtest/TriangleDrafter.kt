@@ -27,8 +27,5 @@ class TriangleDrafter(
 			Point(Random.nextInt(0, width), Random.nextInt(0, height)),
 			Random.nextInt()
 		).draw(canvas)
-
-		// set bitmap as background to ImageView
-		//imageV.background = BitmapDrawable(bitmap)
 	}
 }
